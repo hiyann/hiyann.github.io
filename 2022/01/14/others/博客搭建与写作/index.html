@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.1.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>博客搭建和写作相关 - Yann’s blog</title>
+
+  
+    <meta name="description" content="此主题下如何搭建博客并进行文章写作。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建和写作相关">
+<meta property="og:url" content="https://hiyann.gitee.io/2022/01/14/others/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%86%99%E4%BD%9C/index.html">
+<meta property="og:site_name" content="Yann’s blog">
+<meta property="og:description" content="此主题下如何搭建博客并进行文章写作。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/stellar/photos/183e71e0ad995.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/stellar/photos/bc7bda18328da.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/mirror/apple/documentation/watchkit/06d45110-1dd7-49a4-a413-9f5159ecdd0e.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg">
+<meta property="article:published_time" content="2022-01-14T03:43:12.000Z">
+<meta property="article:modified_time" content="2022-11-05T07:15:53.683Z">
+<meta property="article:author" content="Yann">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg">
+  
+  
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+    <link rel="shortcut icon" href="https://www.helloimg.com/images/2022/08/14/ZNfu3D.jpg">
+  
+
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="http://127.0.0.1:8888/uploads/tx.jpg" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Yann’s blog</div><div class="sub normal cap">记录知识，分享生活</div><div class="sub hover cap" style="opacity:0">hiyann.gitee.io</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/about/">关于</a></nav></header>
+
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA"><span class="toc-text">搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E4%BD%9C"><span class="toc-text">写作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E8%AE%B0"><span class="toc-text">标记</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE"><span class="toc-text">标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%A9%E8%89%B2%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-text">彩色代码块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%98%E5%8F%A0%E6%A0%87%E7%AD%BE"><span class="toc-text">折叠标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%A1%E7%89%87%E6%A0%87%E7%AD%BE"><span class="toc-text">卡片标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%A1%86%E6%A0%87%E7%AD%BE"><span class="toc-text">选框标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E7%BA%BF"><span class="toc-text">时间线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E8%88%AA%E6%A0%8F%E6%A0%87%E7%AD%BE"><span class="toc-text">导航栏标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-text">图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E8%BD%AE%E6%92%AD%E6%A0%87%E7%AD%BE"><span class="toc-text">图片轮播标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6%E6%A0%87%E7%AD%BE"><span class="toc-text">复制标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%A0%8F%E6%A0%87%E7%AD%BE"><span class="toc-text">分栏标签</span></a></li></ol></li></ol></div></div></div>
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="http://127.0.0.1:8888/uploads/github.png"/></a><a class="social" href="https://gitee.com/" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="http://127.0.0.1:8888/uploads/gitee.png"/></a><a class="social" href="https://music.163.com/" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="http://127.0.0.1:8888/uploads/wyy.png"/></a><a class="social" href="https://www.bilibili.com/" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="http://127.0.0.1:8888/uploads/bz.png"/></a><a class="social" href="https://weibo.com/" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="http://127.0.0.1:8888/uploads/wb.png"/></a><a class="social" href="https://www.zhihu.com/explore" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="http://127.0.0.1:8888/uploads/zh.png"/></a></div></footer>
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></div><div id="post-meta">发布于&nbsp;<time datetime="2022-01-14T03:43:12.000Z">2022-01-14</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>博客搭建和写作相关</span></h1>
+<p>此主题下如何搭建博客并进行文章写作。</p>
+<span id="more"></span>
+
+<h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">s</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><h3 id="标记"><a href="#标记" class="headerlink" title="标记"></a>标记</h3><ul>
+<li>支持多彩标记标签，包括：<mark class="tag-plugin mark" >默认</mark><mark class="tag-plugin mark" color="red">红</mark><mark class="tag-plugin mark" color="orange">橙</mark><mark class="tag-plugin mark" color="yellow">黄</mark><mark class="tag-plugin mark" color="green">绿</mark><mark class="tag-plugin mark" color="cyan">青</mark><mark class="tag-plugin mark" color="blue">蓝</mark><mark class="tag-plugin mark" color="purple">紫</mark><mark class="tag-plugin mark" color="light">浅</mark><mark class="tag-plugin mark" color="dark">深</mark> 一共 10 种颜色。</li>
+<li>这是 <psw>密码</psw> 标签</li>
+<li>这是 <u>下划线</u> 标签</li>
+<li>这是 <emp>着重号</emp> 标签</li>
+<li>这是 <wavy>波浪线</wavy> 标签</li>
+<li>这是 <del>删除线</del> 标签</li>
+<li>这是 <sup class="tag-plugin sup" color="red">上角标</sup> 标签</li>
+<li>这是 <sub class="tag-plugin sub" >下角标</sub> 标签</li>
+<li>这是 <kbd>键盘样式</kbd> 标签，试一试：<kbd>⌘</kbd> + <kbd>D</kbd></li>
+</ul>
+<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><div class="tag-plugin note" color="red"><div class="title"><strong>一共支持10种颜色，可以满足几乎所有的需求了。</strong></div><div class="body"><p>color 可设置 red、orange、yellow、green、cyan、blue、purple、light、dark 9种值。</p></div></div>
+
+<div class="tag-plugin note" ><div class="title"><strong>这是标题</strong></div><div class="body"><p>这是正文 哈哈。</p></div></div>
+
+<div class="tag-plugin note" ><div class="title"><strong>这是标题</strong></div><div class="body"><p>这是正文 哈哈。</p></div></div>
+
+<h3 id="彩色代码块"><a href="#彩色代码块" class="headerlink" title="彩色代码块"></a>彩色代码块</h3><div class="tag-plugin note" color="green" child="codeblock"><div class="body"><p>hexo cl<br>hexo g<br>hexo d</p></div></div>
+
+<h3 id="折叠标签"><a href="#折叠标签" class="headerlink" title="折叠标签"></a>折叠标签</h3><details class="tag-plugin folding" color="yellow" child="codeblock"><summary><span>默认关闭的代码折叠框</span></summary><div class="body"><p>代码块</p></div></details>
+
+<h3 id="卡片标签"><a href="#卡片标签" class="headerlink" title="卡片标签"></a>卡片标签</h3><p>链接 + 标题：</p>
+<div class="tag-plugin link dis-select"><a class="link-card plain" title="Stellar&nbsp;-&nbsp;每个人的独立博客" href="https://github.com/xaoxuu/hexo-theme-stellar" target="_blank" rel="external nofollow noopener noreferrer"><div class="left"><span class="title">Stellar&nbsp;-&nbsp;每个人的独立博客</span><span class="desc fs12">https://github.com/xaoxuu/hexo-theme-stellar</span></div><div class="right"><div class="lazy img" data-bg="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg"></div></div></a></div>
+
+<p>链接 + 标题 + 图标：</p>
+<div class="tag-plugin link dis-select"><a class="link-card plain" title="Stellar&nbsp;-&nbsp;每个人的独立博客" href="https://github.com/xaoxuu/hexo-theme-stellar" target="_blank" rel="external nofollow noopener noreferrer"><div class="left"><span class="title">Stellar&nbsp;-&nbsp;每个人的独立博客</span><span class="desc fs12">https://github.com/xaoxuu/hexo-theme-stellar</span></div><div class="right"><div class="lazy img" data-bg="https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/stellar/icon.svg"></div></div></a></div>
+
+<p>链接 + 标题 + 描述：</p>
+<div class="tag-plugin link dis-select"><a class="link-card rich" title="Stellar&nbsp;-&nbsp;每个人的独立博客" href="https://github.com/xaoxuu/hexo-theme-stellar/hexo-theme-stellar" target="_blank" rel="external nofollow noopener noreferrer"><div class="top"><div class="lazy img" data-bg="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg"></div><span class="desc fs12">https://github.com/xaoxuu/hexo-theme-stellar/hexo-theme-stellar</span></div><div class="bottom"><span class="title">Stellar&nbsp;-&nbsp;每个人的独立博客</span><span class="desc fs12">Stellar 是一个内置 wiki 系统的 hexo 主题，适合综合型站点使用。同时也拥有简约而精美的视觉设计和丰富的标签插件，帮助您简单从容地应对各种场合。</span></div></a></div>
+
+<p>链接 + 标题 + 图标 + 描述：</p>
+<div class="tag-plugin link dis-select"><a class="link-card rich" title="Stellar&nbsp;-&nbsp;每个人的独立博客" href="https://github.com/xaoxuu/hexo-theme-stellar/hexo-theme-stellar" target="_blank" rel="external nofollow noopener noreferrer"><div class="top"><div class="lazy img" data-bg="https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/stellar/icon.svg"></div><span class="desc fs12">https://github.com/xaoxuu/hexo-theme-stellar/hexo-theme-stellar</span></div><div class="bottom"><span class="title">Stellar&nbsp;-&nbsp;每个人的独立博客</span><span class="desc fs12">Stellar 是一个内置 wiki 系统的 hexo 主题，适合综合型站点使用。同时也拥有简约而精美的视觉设计和丰富的标签插件，帮助您简单从容地应对各种场合。</span></div></a></div>
+
+
+<h3 id="选框标签"><a href="#选框标签" class="headerlink" title="选框标签"></a>选框标签</h3><div class="tag-plugin checkbox" color="red"><input type="radio" checked="true"/><span>这个还</span></div>
+
+<p>是否开启选框：checked: true&#x2F;false<br>颜色可选：color: red&#x2F;orange&#x2F;yellow&#x2F;green&#x2F;cyan&#x2F;blue&#x2F;purple</p>
+<div class="tag-plugin checkbox" color="red"><input type="checkbox" checked="true"/><span>这个还</span></div>
+<p>内部符号可选：symbol: plus&#x2F;minus&#x2F;times</p>
+<h3 id="时间线"><a href="#时间线" class="headerlink" title="时间线"></a>时间线</h3><div class="tag-plugin timeline"><div class="timenode" item="1"><div class="header"><p>2021 年 2 月 16 日</p></div><div class="body fs14"><p>主要部分功能已经开发的差不多了。</p><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg" style="width:300px;"/></div></div></div></div><div class="timenode" item="2"><div class="header"><p>2021 年 2 月 11 日</p></div><div class="body fs14"><p>今天除夕，也是生日，一个人在外地过年+过生日，熬夜开发新主题，尽量在假期结束前放出公测版。</p></div></div></div>
+
+<h3 id="导航栏标签"><a href="#导航栏标签" class="headerlink" title="导航栏标签"></a>导航栏标签</h3><div class="tag-plugin navbar"><nav class="cap"><a href="/">文章</a><a href="/about/">关于</a><a href="#comments">留言</a><a target="_blank" rel="noopener" href="https://github.com/hiyann/">GitHub</a></nav></div>
+
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/stellar/photos/183e71e0ad995.jpg" alt="来自印度的 Rohit Vohra 使用 iPhone 12 Pro Max 拍摄。"/><a class="image-download blur" style="opacity:0" target="_blank" rel="noopener" href="https://www.apple.com.cn/newsroom/images/product/iphone/lifestyle/Apple_ShotoniPhone-rohit_vohra_12172020.zip"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">来自印度的 Rohit Vohra 使用 iPhone 12 Pro Max 拍摄。</span></div></div>
+
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/stellar/photos/bc7bda18328da.jpg" alt="来自澳大利亚的 Pieter de Vries 使用 iPhone 12 Pro Max 拍摄。"/><a class="image-download blur" style="opacity:0" target="_blank" rel="noopener" href="https://www.apple.com.cn/newsroom/images/product/iphone/lifestyle/Apple_ShotoniPhone_pieter_de_vries_011221.zip"><svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3734"><path d="M561.00682908 685.55838913a111.03077546 111.03077546 0 0 1-106.8895062 0L256.23182837 487.72885783a55.96309219 55.96309219 0 0 1 79.13181253-79.18777574L450.70357448 523.88101491V181.55477937a55.96309219 55.96309219 0 0 1 111.92618438 0v344.06109173l117.07478902-117.07478901a55.96309219 55.96309219 0 0 1 79.13181252 79.18777574zM282.81429711 797.1487951h447.70473912a55.96309219 55.96309219 0 0 1 0 111.92618438H282.81429711a55.96309219 55.96309219 0 0 1 0-111.92618438z" p-id="3735"></path></svg></a></div><div class="image-meta"><span class="image-caption center">来自澳大利亚的 Pieter de Vries 使用 iPhone 12 Pro Max 拍摄。</span></div></div>
+
+<div class="tag-plugin image"><div class="image-bg" style="background:white;padding:16px;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/mirror/apple/documentation/watchkit/06d45110-1dd7-49a4-a413-9f5159ecdd0e.png" style="width:200px;"/></div></div>
+
+<h3 id="图片轮播标签"><a href="#图片轮播标签" class="headerlink" title="图片轮播标签"></a>图片轮播标签</h3><div class="tag-plugin swiper-container" id="swiper-api" width="90"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></div><div class="swiper-slide"><img no-lazy src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg" onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
+
+<h3 id="复制标签"><a href="#复制标签" class="headerlink" title="复制标签"></a>复制标签</h3><div class="tag-plugin copy"><input class="copy-area" readonly id="copy_1" value="curl -s https://xaoxuu.com/install | sh"><button class="copy-btn" onclick="util.copy(&quot;copy_1&quot;,&quot;Copied!&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>
+<div class="tag-plugin copy" width="max"><input class="copy-area" readonly id="copy_2" value="curl -s https://xaoxuu.com/install | sh"><button class="copy-btn" onclick="util.copy(&quot;copy_2&quot;,&quot;Copied!&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>
+<div class="tag-plugin copy"><input class="copy-area" readonly id="copy_3" value="https://github.com/xaoxuu.com/hexo-theme-stellar.git"><button class="copy-btn" onclick="util.copy(&quot;copy_3&quot;,&quot;Copied!&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>
+<div class="tag-plugin copy"><input class="copy-area" readonly id="copy_4" value="git@github.com:xaoxuu.com/hexo-theme-stellar.git"><button class="copy-btn" onclick="util.copy(&quot;copy_4&quot;,&quot;Copied!&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>
+<div class="tag-plugin copy"><input class="copy-area" readonly id="copy_5" value="gh repo clone xaoxuu.com/hexo-theme-stellar"><button class="copy-btn" onclick="util.copy(&quot;copy_5&quot;,&quot;Copied!&quot;)"><svg class="icon copy-btn" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></button></div>
+
+<h3 id="分栏标签"><a href="#分栏标签" class="headerlink" title="分栏标签"></a>分栏标签</h3><div class="tag-plugin tabs" align="center"id="tab_1""><ul class="nav-tabs"><li class="tab"><a href="#tab_1-1">图片</a></li><li class="tab active"><a href="#tab_1-2">代码块</a></li><li class="tab"><a href="#tab_1-3">表格</a></li></ul><div class="tab-content"><div class="tab-pane" id="tab_1-1"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg" style="width:300px;"/></div></div></div><div class="tab-pane active" id="tab_1-2"><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x <span class="operator">=</span> <span class="number">123</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tab_1-3"><table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>c</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a1</td>
+<td>b1</td>
+<td>c1</td>
+</tr>
+<tr>
+<td>a2</td>
+<td>b2</td>
+<td>c2</td>
+</tr>
+</tbody></table></div></div></div>
+
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><div class="line"></div><a id="prev" href="/2022/01/14/others/2021%E5%B9%B4%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/">2021年度个人总结<span class="note">较新</span></a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/">近期</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">实用</span><a target="_blank" rel="noopener" href="https://www.helloimg.com/">图床</a><a target="_blank" rel="noopener" href="https://www.51yuansu.com/">图库</a></div><div class="sitemap-group"><span class="fs14">友链</span><a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">主题</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/notes/">便笺</a></div></div><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>本站由 <a href="https://hiyann.gitee.io/">@Yann</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.6.1" title="v1.6.1">Stellar</a> 作为主题。</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="http://127.0.0.1:8888/uploads/moe.png" class="lazyload loaded lazy" srcset="http://127.0.0.1:8888/uploads/moe.png" style="width:18px;height:18px;margin-bottom:-3px" data-ll-status="loaded"> 萌ICP备<a href="https://icp.gov.moe/?keyword=20210896" target="_blank"> 20210896 </a>号 <hr> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="http://127.0.0.1:8888/uploads/14.png" class="lazyload loaded lazy" srcset="http://127.0.0.1:8888/uploads/14.png" style="width:18px;height:18px;margin-bottom:-3px" data-ll-status="loaded"> 网站已安全运行：<span id="htmer_time" style="color:black;"></span></p>
+</div></footer>
+
+
+<script>
+  function secondToDate(second) {
+      if (!second) {
+          return 0;
+      }
+      var time = new Array(0, 0, 0, 0, 0);
+      if (second >= 365 * 24 * 3600) {
+          time[0] = parseInt(second / (365 * 24 * 3600));
+          second %= 365 * 24 * 3600;
+      }
+      if (second >= 24 * 3600) {
+          time[1] = parseInt(second / (24 * 3600));
+          second %= 24 * 3600;
+      }
+      if (second >= 3600) {
+          time[2] = parseInt(second / 3600);
+          second %= 3600;
+      }
+      if (second >= 60) {
+          time[3] = parseInt(second / 60);
+          second %= 60;
+      }
+      if (second > 0) {
+          time[4] = second;
+      }
+      return time;
+  }
+</script>
+<script type="text/javascript" language="javascript">
+  function setTime() {
+      // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+      var create_time = Math.round(new Date(Date.UTC(2021, 11, 23, 0, 0, 0))
+              .getTime() / 1000);
+      // 当前时间秒数,增加时区的差异
+      var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+      currentTime = secondToDate((timestamp - create_time));
+      currentTimeHtml = currentTime[0] + ' 年 ' + currentTime[1] + ' 天 '
+              + currentTime[2] + ' 时 ' + currentTime[3] + ' 分 ' + currentTime[4]
+              + ' 秒 ';
+      document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+  }
+  setInterval(setTime, 1000);
+</script>
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.6.1';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","comment":{"enable":true,"selector":null}});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function loadBeaudar() {
+    const els = document.querySelectorAll("#comments #beaudar");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.log(error);
+      }
+      var script = document.createElement('script');
+      script.src = 'https://beaudar.lipk.org/client.js';
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+      loadBeaudar();
+  });
+</script>
+
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>
