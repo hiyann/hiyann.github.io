@@ -1,0 +1,5 @@
+{
+	"origins": [
+        "hiyann.github.io"
+  ]
+}
