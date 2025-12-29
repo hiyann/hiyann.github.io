@@ -93,7 +93,7 @@ try {
             hud.toast('☽ 夜间模式');
             ThemeChange('dark');
         } else {
-            hud.toast('☼/☽ 自动模式');
+            hud.toast('☯ 自动模式');
             ThemeChange('auto');
         }
     }
